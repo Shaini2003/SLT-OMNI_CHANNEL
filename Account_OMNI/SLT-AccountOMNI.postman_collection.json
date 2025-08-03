@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "20c3e3db-d49d-47f5-9f41-34298bb946f1",
+		"name": "SLT-AccountOMNI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37306925",
+		"_collection_link": "https://shaini-0399.postman.co/workspace/customers~607d0602-8599-4f3c-a6e1-3a1e8ac9fdd4/collection/37306925-20c3e3db-d49d-47f5-9f41-34298bb946f1?action=share&source=collection_link&creator=37306925"
+	},
+	"item": [
+		{
+			"name": "GetServiceDetailRequestPlayStreet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tmf-api/serviceManagement/v1/serviceDetail?telephoneNo=0111234567",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tmf-api",
+						"serviceManagement",
+						"v1",
+						"serviceDetail"
+					],
+					"query": [
+						{
+							"key": "telephoneNo",
+							"value": "0111234567"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

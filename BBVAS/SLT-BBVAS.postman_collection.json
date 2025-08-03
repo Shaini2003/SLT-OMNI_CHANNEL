@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "5ce83202-724d-4fd2-b8f5-0965c5ddd327",
+		"name": "SLT-BBVAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37306925",
+		"_collection_link": "https://shaini-0399.postman.co/workspace/customers~607d0602-8599-4f3c-a6e1-3a1e8ac9fdd4/collection/37306925-5ce83202-724d-4fd2-b8f5-0965c5ddd327?action=share&source=collection_link&creator=37306925"
+	},
+	"item": [
+		{
+			"name": "EnhancedCurrentDailyUsage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/usageManagement/enhancedCurrentDailyUsage?subscriberID=94112179676&billDate=01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usageManagement",
+						"enhancedCurrentDailyUsage"
+					],
+					"query": [
+						{
+							"key": "subscriberID",
+							"value": "94112179676"
+						},
+						{
+							"key": "billDate",
+							"value": "01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EnhancedPreviousDailyUsage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tmf-api/enhancedPreviousDailyUsage?subscriberID=94112488102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tmf-api",
+						"enhancedPreviousDailyUsage"
+					],
+					"query": [
+						{
+							"key": "subscriberID",
+							"value": "94112488102"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prevoius Month Daily Usage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/usageManagement/PreviousMonthsDailyUsage?subscriberID=94112488102&billDate=01&monthIndex=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usageManagement",
+						"PreviousMonthsDailyUsage"
+					],
+					"query": [
+						{
+							"key": "subscriberID",
+							"value": "94112488102"
+						},
+						{
+							"key": "billDate",
+							"value": "01"
+						},
+						{
+							"key": "monthIndex",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

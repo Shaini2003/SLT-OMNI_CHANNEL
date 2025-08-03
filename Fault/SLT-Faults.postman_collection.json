@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "81e0ff98-22b9-4502-a601-68921337119a",
+		"name": "SLT-Faults",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37306925",
+		"_collection_link": "https://shaini-0399.postman.co/workspace/customers~607d0602-8599-4f3c-a6e1-3a1e8ac9fdd4/collection/37306925-81e0ff98-22b9-4502-a601-68921337119a?action=share&source=collection_link&creator=37306925"
+	},
+	"item": [
+		{
+			"name": "CreateServiceRequest",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"PEO GO initiation\",\r\n  \"SRType\": \"Automated Service Registration\",\r\n  \"INSArea\": \"Service Registration\",\r\n  \"INSSubArea\": \"PEO TV Go\",\r\n  \"ServiceId\": \"0342265644\",\r\n  \"TTSource\": \"OMNI\",\r\n  \"note\": \"Sample Note\",\r\n  \"notetype\": \"Customer Note\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tmf-api/serviceRequestManagement/v1/serviceRequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tmf-api",
+						"serviceRequestManagement",
+						"v1",
+						"serviceRequest"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CreateServiceRequest",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"PEO GO initiation\",\r\n  \"SRType\": \"Automated Service Registration\",\r\n  \"INSArea\": \"Service Registration\",\r\n  \"INSSubArea\": \"PEO TV Go\",\r\n  \"ServiceId\": \"0342265644\",\r\n  \"TTSource\": \"OMNI\",\r\n  \"note\": \"Sample Note\",\r\n  \"notetype\": \"Customer Note\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/tmf-api/serviceRequestManagement/v1/serviceRequest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"tmf-api",
+								"serviceRequestManagement",
+								"v1",
+								"serviceRequest"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "334"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14e-98BDhx8ICvwvHLn6FygG+jDsjR4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Aug 2025 08:48:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"description\": \"PEO GO initiation\",\n    \"SRType\": \"Automated Service Registration\",\n    \"INSArea\": \"Service Registration\",\n    \"INSSubArea\": \"PEO TV Go\",\n    \"ServiceId\": \"0342265644\",\n    \"TTSource\": \"OMNI\",\n    \"note\": \"Sample Note\",\n    \"notetype\": \"Customer Note\",\n    \"status\": \"acknowledged\",\n    \"_id\": \"688f2277d8d068753842e343\",\n    \"requestedDate\": \"2025-08-03T08:48:55.207Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		}
+	]
+}

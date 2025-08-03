@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "cabc75bd-60fe-4156-990f-d4fd7806472d",
+		"name": "SLT OMINI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37306925",
+		"_collection_link": "https://shaini-0399.postman.co/workspace/customers~607d0602-8599-4f3c-a6e1-3a1e8ac9fdd4/collection/37306925-cabc75bd-60fe-4156-990f-d4fd7806472d?action=share&source=collection_link&creator=37306925"
+	},
+	"item": [
+		{
+			"name": "ViewUserInfo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/tmf-api/accountManagement/v5/account/view?userName=0705989005\n\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tmf-api",
+						"accountManagement",
+						"v5",
+						"account",
+						"view"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "0705989005\n\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
