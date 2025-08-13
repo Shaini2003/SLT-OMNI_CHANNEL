@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "22863131-0b5a-4d12-82b4-174b253f5aea",
+		"name": "PEO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37306925",
+		"_collection_link": "https://shaini-0399.postman.co/workspace/customers~607d0602-8599-4f3c-a6e1-3a1e8ac9fdd4/collection/37306925-22863131-0b5a-4d12-82b4-174b253f5aea?action=share&source=collection_link&creator=37306925"
+	},
+	"item": [
+		{
+			"name": "PurchaseProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"telNo\": \"9999999948\",\r\n  \"productID\": \"P04021\",\r\n  \"pin\": \"111111\",\r\n  \"requestType\": \"PurchaseProduct\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tmf-api/productOrderingManagement/v5/productOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tmf-api",
+						"productOrderingManagement",
+						"v5",
+						"productOrder"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PurchaseProduct",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"telNo\": \"9999999948\",\r\n  \"productID\": \"P04021\",\r\n  \"pin\": \"111111\",\r\n  \"requestType\": \"PurchaseProduct\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tmf-api/productOrderingManagement/v5/productOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tmf-api",
+								"productOrderingManagement",
+								"v5",
+								"productOrder"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "246"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f6-xkjWl4HB/q5x8GzoJtJVR/ofEMw\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Aug 2025 06:51:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Product order created successfully\",\n    \"order\": {\n        \"telNo\": \"9999999948\",\n        \"productID\": \"P04021\",\n        \"pin\": \"111111\",\n        \"requestType\": \"PurchaseProduct\",\n        \"status\": \"Pending\",\n        \"_id\": \"689c35e10f5554479aa09a19\",\n        \"createdAt\": \"2025-08-13T06:51:13.943Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}
