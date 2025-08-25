@@ -98,6 +98,504 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Free Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"externalId\": \"bonusReq-123\",\r\n  \"description\": \"Grant 2GB bonus data\",\r\n  \"productOffering\": {\r\n    \"id\": \"BONUS-2GB\",\r\n    \"name\": \"Bonus Data 2GB\"\r\n  },\r\n  \"productCharacteristic\": [\r\n    { \"name\": \"validity\", \"value\": \"14 days\" },\r\n    { \"name\": \"bonusData\", \"value\": \"2048MB\" }\r\n  ]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tmf-api/promotionManagement/v4/promotion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tmf-api",
+						"promotionManagement",
+						"v4",
+						"promotion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Free Data",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "reportTimePeriod",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tmf-api/reportManagement/v5/reportTimePeriod",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tmf-api",
+						"reportManagement",
+						"v5",
+						"reportTimePeriod"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Report Time period",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tmf-api/reportManagement/v5/reportTimePeriod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tmf-api",
+								"reportManagement",
+								"v5",
+								"reportTimePeriod"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1283"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"503-+UA2gzOpsCE38zVZQ6ASjSWveMY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 25 Aug 2025 04:46:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68abea50855ef85154a92db6\",\n        \"id\": \"rtp-001\",\n        \"name\": \"Q1 2025\",\n        \"description\": \"Reporting period for first quarter of 2025\",\n        \"startDateTime\": \"2025-01-01T00:00:00.000Z\",\n        \"endDateTime\": \"2025-03-31T23:59:59.000Z\",\n        \"status\": \"completed\",\n        \"href\": \"/tmf-api/reportManagement/v5/reportTimePeriod/rtp-001\",\n        \"@type\": \"ReportTimePeriod\",\n        \"@baseType\": \"Entity\",\n        \"__v\": 0,\n        \"createdAt\": \"2025-08-25T04:45:04.631Z\",\n        \"updatedAt\": \"2025-08-25T04:45:04.631Z\"\n    },\n    {\n        \"_id\": \"68abea50855ef85154a92db7\",\n        \"id\": \"rtp-002\",\n        \"name\": \"Q2 2025\",\n        \"description\": \"Reporting period for second quarter of 2025\",\n        \"startDateTime\": \"2025-04-01T00:00:00.000Z\",\n        \"endDateTime\": \"2025-06-30T23:59:59.000Z\",\n        \"status\": \"completed\",\n        \"href\": \"/tmf-api/reportManagement/v5/reportTimePeriod/rtp-002\",\n        \"@type\": \"ReportTimePeriod\",\n        \"@baseType\": \"Entity\",\n        \"__v\": 0,\n        \"createdAt\": \"2025-08-25T04:45:04.632Z\",\n        \"updatedAt\": \"2025-08-25T04:45:04.632Z\"\n    },\n    {\n        \"_id\": \"68abea50855ef85154a92db8\",\n        \"id\": \"rtp-003\",\n        \"name\": \"Q3 2025\",\n        \"description\": \"Reporting period for third quarter of 2025\",\n        \"startDateTime\": \"2025-07-01T00:00:00.000Z\",\n        \"endDateTime\": \"2025-09-30T23:59:59.000Z\",\n        \"status\": \"active\",\n        \"href\": \"/tmf-api/reportManagement/v5/reportTimePeriod/rtp-003\",\n        \"@type\": \"ReportTimePeriod\",\n        \"@baseType\": \"Entity\",\n        \"__v\": 0,\n        \"createdAt\": \"2025-08-25T04:45:04.632Z\",\n        \"updatedAt\": \"2025-08-25T04:45:04.632Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetAdvancedReportingPackage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tmf-api/reportManagement/v5/advancedReportingPackage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tmf-api",
+						"reportManagement",
+						"v5",
+						"advancedReportingPackage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAdvancedReportingPackage",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tmf-api/reportManagement/v5/advancedReportingPackage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tmf-api",
+								"reportManagement",
+								"v5",
+								"advancedReportingPackage"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "858"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"35a-Du9nlnGY2vSRFodvSahh2VRW37A\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 25 Aug 2025 08:04:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68ac188cabcf98eebee11dec\",\n        \"id\": \"arp-001\",\n        \"name\": \"Q1 2025 Financial Report\",\n        \"description\": \"Advanced reporting package for Q1 2025 financials\",\n        \"reportType\": \"financial\",\n        \"status\": \"available\",\n        \"downloadLink\": \"/downloads/reports/arp-001.pdf\",\n        \"@type\": \"AdvancedReportingPackage\",\n        \"@baseType\": \"Entity\",\n        \"generatedDate\": \"2025-08-25T08:02:20.484Z\",\n        \"__v\": 0,\n        \"createdAt\": \"2025-08-25T08:02:20.486Z\",\n        \"updatedAt\": \"2025-08-25T08:02:20.486Z\"\n    },\n    {\n        \"_id\": \"68ac188cabcf98eebee11ded\",\n        \"id\": \"arp-002\",\n        \"name\": \"Customer Satisfaction Insights\",\n        \"description\": \"Customer experience report package for 2025\",\n        \"reportType\": \"customer\",\n        \"status\": \"available\",\n        \"downloadLink\": \"/downloads/reports/arp-002.pdf\",\n        \"@type\": \"AdvancedReportingPackage\",\n        \"@baseType\": \"Entity\",\n        \"generatedDate\": \"2025-08-25T08:02:20.485Z\",\n        \"__v\": 0,\n        \"createdAt\": \"2025-08-25T08:02:20.487Z\",\n        \"updatedAt\": \"2025-08-25T08:02:20.487Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "AddVASDataBundlePrepaidInit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"VAS2001\",\r\n  \"customerId\": \"CUST123\",\r\n  \"bundleName\": \"20GB Prepaid Data\",\r\n  \"dataVolume\": \"20GB\",\r\n  \"validity\": \"60 Days\",\r\n  \"price\": 1500\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tmf-api/productOrdering/v4/AddVASDataBundlePrepaidInit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tmf-api",
+						"productOrdering",
+						"v4",
+						"AddVASDataBundlePrepaidInit"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AddVASDataBundlePrepaidInit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"VAS2001\",\r\n  \"customerId\": \"CUST123\",\r\n  \"bundleName\": \"20GB Prepaid Data\",\r\n  \"dataVolume\": \"20GB\",\r\n  \"validity\": \"60 Days\",\r\n  \"price\": 1500\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tmf-api/productOrdering/v4/AddVASDataBundlePrepaidInit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tmf-api",
+								"productOrdering",
+								"v4",
+								"AddVASDataBundlePrepaidInit"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "308"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"134-c/JYQA9gcpHhSjHtYH5Ul/oj9Qw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 25 Aug 2025 08:48:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"201\",\n    \"message\": \"VAS Data Bundle Prepaid Initiated Successfully\",\n    \"data\": {\n        \"id\": \"VAS2001\",\n        \"customerId\": \"CUST123\",\n        \"bundleName\": \"20GB Prepaid Data\",\n        \"dataVolume\": \"20GB\",\n        \"validity\": \"60 Days\",\n        \"price\": 1500,\n        \"status\": \"initiated\",\n        \"_id\": \"68ac234ef182b7aa03736cbf\",\n        \"createdAt\": \"2025-08-25T08:48:14.100Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "DataGiftEnroll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"senderId\": \"CUST123\",\r\n  \"receiverId\": \"CUST456\",\r\n  \"bundleName\": \"Gift 2GB Data\",\r\n  \"dataVolume\": \"2GB\",\r\n  \"validity\": \"7 Days\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tmf-api/productOrdering/v4/DataGiftEnroll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tmf-api",
+						"productOrdering",
+						"v4",
+						"DataGiftEnroll"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DataGiftEnroll",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"senderId\": \"CUST123\",\r\n  \"receiverId\": \"CUST456\",\r\n  \"bundleName\": \"Gift 2GB Data\",\r\n  \"dataVolume\": \"2GB\",\r\n  \"validity\": \"7 Days\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tmf-api/productOrdering/v4/DataGiftEnroll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tmf-api",
+								"productOrdering",
+								"v4",
+								"DataGiftEnroll"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "306"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"132-QDPdxrtPR7LjH3Tk4Pn5Ufbrk+w\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 25 Aug 2025 09:52:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"href\": \"/tmf-api/productOrdering/v4/DataGiftEnroll/50033713-9296-42ec-b04e-14c9af87d738\",\n    \"id\": \"50033713-9296-42ec-b04e-14c9af87d738\",\n    \"status\": \"initiated\",\n    \"senderId\": \"CUST123\",\n    \"receiverId\": \"CUST456\",\n    \"bundleName\": \"Gift 2GB Data\",\n    \"dataVolume\": \"2GB\",\n    \"validity\": \"7 Days\",\n    \"createdAt\": \"2025-08-25T09:52:25.211Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateContact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"alice.new@example.com\",\r\n  \"preferred\": false,\r\n  \"status\": \"inactive\"\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/tmf-api/customerManagement/v4/updateContact/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tmf-api",
+						"customerManagement",
+						"v4",
+						"updateContact",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UpdateContact",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"emailAddress\": \"alice.new@example.com\",\r\n  \"preferred\": false,\r\n  \"status\": \"inactive\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tmf-api/customerManagement/v4/updateContact/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tmf-api",
+								"customerManagement",
+								"v4",
+								"updateContact",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "326"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"146-4aIir8WccGNeDjNvq40qkq0S9EY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 25 Aug 2025 11:47:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"isSuccess\": true,\n    \"errorMessage\": \"Contact updated successfully\",\n    \"exceptionDetail\": null,\n    \"dataBundle\": {\n        \"_id\": \"68ac4d1eae884b0b56c9b4d0\",\n        \"id\": \"1\",\n        \"partyId\": \"P001\",\n        \"contactType\": \"email\",\n        \"emailAddress\": \"alice.new@example.com\",\n        \"preferred\": false,\n        \"status\": \"inactive\",\n        \"__v\": 0\n    },\n    \"errorShow\": \"Contact updated successfully\",\n    \"errorCode\": \"\"\n}"
+				}
+			]
 		}
 	]
 }
